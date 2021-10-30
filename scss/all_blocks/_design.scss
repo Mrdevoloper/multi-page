@@ -1,0 +1,130 @@
+.design {
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1160px;
+    height: 640px;
+    margin-top: 160px;
+    margin-left: 5px;
+
+  }
+
+  &__pic1 {
+    position: relative;
+
+
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 45%;
+    left: 27%;
+    color: #fff;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+
+
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 41%;
+    left: 34%;
+    color: #fff;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+
+
+    &:after {
+      content: url(../../images/path.svg);
+    }
+
+  }
+
+}
+
+
+.design__appeer:hover {
+  width: 540px;
+  opacity: 0.5;
+  border-radius: 15px;
+  background: #E7816B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media screen and (max-width:910px) {
+  .design {
+    &__appeer {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .design {
+    &__appeer {
+      width: 100%;
+      max-width: 700px;
+      height: 200px;
+    }
+
+    &__wrapper {
+      margin-top: 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width:450px) {
+  .design {
+    &__pic1 {
+      position: relative;
+  
+    }
+    &__title {
+      position: absolute;
+      bottom: 30%;
+      left: 27%;
+      color: #fff;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 35px;
+      letter-spacing: 2px;
+
+
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 21%;
+      left: 34%;
+      color: #fff;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 5px;
+    }
+  }
+}

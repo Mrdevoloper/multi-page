@@ -1,0 +1,308 @@
+.frame {
+  width: 100%;
+
+  &__card {
+    width: 100%;
+    max-width: 1130px;
+    height: 762px;
+    background-color: #E7816B;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: url(../../images/rectangle.png);
+      width: 100%;
+      position: absolute;
+      top: 57%;
+      right: 20%;
+      z-index: -1;
+
+    }
+
+  }
+
+  &__cards1 {
+    width: 100%;
+    padding-top: 145px;
+    padding-left: 95px;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 540px;
+    height: 165px;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 445px;
+    height: 78px;
+    font-family: 'Jost';
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    padding: 18px 24px 16px 25px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #333136;
+    font-family: 'Jost';
+    transition: all 0.4s ease;
+
+    &:hover {
+      background: #FFAD9B;
+
+    }
+
+  }
+
+  &__pic {
+    width: 100%;
+    margin-top: 64px;
+
+  }
+
+  &__cards {
+    width: 100%;
+    position: relative;
+    padding-left: 60px;
+
+    &::before {
+      width: 100%;
+      content: url(../../images/circle.png);
+      position: absolute;
+      right: 1%;
+      width: 640px;
+      height: 640px;
+    }
+  }
+
+}
+
+@media screen and (max-width:990px) {
+  .container {
+    width: 100%;
+    max-width: 990px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .frame {
+    &__title {
+      width: 100%;
+      max-width: 560px;
+      height: 175px;
+      font-family: 'Jost';
+      font-weight: 500;
+      font-size: 45px;
+      line-height: 45px;
+      color: #fff;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 400px;
+      height: 90px;
+      font-family: 'Jost';
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+      margin-bottom: 60px;
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width:820px) {
+  .container {
+    width: 100%;
+    max-width: 820px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .frame {
+
+
+    &__title {
+      width: 100%;
+      max-width: 600px;
+      height: 165px;
+      font-family: 'Jost';
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 43px;
+      color: #fff;
+      margin-bottom: 90px;
+
+
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 410px;
+      height: 100px;
+      font-family: 'Jost';
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 60px;
+      border-top: 20px;
+
+    }
+
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    width: 100%;
+    max-width: 820px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .frame {
+    .container {
+      width: 100%;
+      max-width: 770px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+    &__card {
+      width: 100%;
+      max-width: 770px;
+      height: 900px;
+      background-color: #E7816B;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+
+      &:after {
+        display: none;
+        content: url(../../images/rectangle.png);
+        width: 100%;
+        position: absolute;
+        top: 57%;
+        right: 29%;
+        z-index: -1;
+
+      }
+
+    }
+
+    &__title {
+      width: 100%;
+      max-width: 550px;
+      height: 165px;
+      font-family: 'Jost';
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 43px;
+      color: #fff;
+      margin-bottom: 0px;
+
+
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 440px;
+      height: 100px;
+      font-family: 'Jost';
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 0px;
+      border-top: 20px;
+
+    }
+
+    &__cards1 {
+      width: 100%;
+      padding-top: 50px;
+      padding-left: 95px;
+    }
+
+    &__pic {
+      width: 100%;
+      margin-top: 0px;
+      width: 380px;
+      height: 520px;
+
+    }
+
+
+  }
+}
+
+@media screen and (max-width:450px) {
+  .frame{
+
+    &__cards1 {
+      width: 100%;
+      padding-top: -20px;
+      padding-left: 10px;
+    }
+
+    &__card {
+      width: 100%;
+      max-width: 850px;
+      height: 900px;
+      background-color: #E7816B;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+
+    }
+    
+    &__title {
+      width: 100%;
+      max-width: 600px;
+      height: 160px;
+      font-family: 'Jost';
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 38px;
+      color: #fff;
+      margin-bottom: 0px;
+      margin: 0;
+      padding: 0;
+
+    }
+    &__text {
+      width: 100%;
+      max-width: 440px;
+      height: 100px;
+      font-family: 'Jost';
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 35px;
+      // border-top: 20px;
+    }
+
+    
+  }
+}

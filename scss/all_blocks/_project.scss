@@ -1,0 +1,248 @@
+.project {
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1130px;
+    height: 292px;
+    background-color: #E7816B;
+    margin-top: 150px;
+    border-radius: 15px;
+
+  }
+
+  &__item1 {
+    padding-top: 65px;
+    padding-left: 95px;
+    position: relative;
+
+    &::after {
+      content: url(../../images/top-circle2.png);
+      position: absolute;
+      bottom: 48%;
+      left: 150%;
+    }
+
+    &::before {
+      content: url(../../images/top-circle.png);
+      position: absolute;
+      bottom: 48%;
+      left: 97.3%;
+    }
+  }
+
+  &__title {
+    height: 98px;
+    width: 268px;
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+  }
+
+  &__text {
+    width: 460px;
+    height: 78px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(250, 239, 239);
+    margin-top: -30px;
+    position: relative;
+
+    &::before {
+      content: url(../../images/bottom-circle1.png);
+      position: absolute;
+      top: -60%;
+      right: 3%;
+
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding-right: 90px;
+    position: relative;
+
+
+    &::after {
+      content: url(../../images/bottom-circle2.png);
+      position: absolute;
+      top: 50%;
+      right: 134%;
+
+
+    }
+
+    &::before {
+      content: url(../../images/bottom-circle1.png);
+      position: absolute;
+      top: 50%;
+      right: 3%;
+
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 17px 20px 17px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Jost;
+    color: #333136;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background: #FFAD9B;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .project {
+
+    &__item1 {
+      padding-top: 65px;
+      padding-left: 95px;
+
+      &::after {
+        display: none;
+
+      }
+
+      &::before {
+        display: none;
+        content: url(../../images/top-circle.png);
+
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      padding: 10px 14px 10px 14px;
+      background-color: #fff;
+      border-radius: 10px;
+      font-family: Jost;
+      color: #333136;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      transition: all 0.4s ease;
+      margin-right: 30px;
+
+      &:hover {
+        background: #FFAD9B;
+      }
+    }
+
+    &__item {
+      padding-bottom: 30px;
+
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+    }
+
+    &__item1 {
+      padding-top: 35px;
+      padding-left: 35px;
+    }
+
+    &__text {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width:450px) {
+  .project {
+
+
+    &__wrapper {
+      width: 100%;
+      max-width: 1130px;
+      height: 380px;
+      background-color: #E7816B;
+      margin-top: 150px;
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+
+
+    }
+
+    &__title {
+      width: 279px;
+      height: 82px;
+      font-family: Jost;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 36px;
+      color: #fff;
+    ;
+    }
+
+    &__text {
+      width: 279px;
+      height: 75px;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 25px; 
+      color: rgb(250, 239, 239);
+      margin-top: -30px;
+      margin: 0;
+      position: relative;
+    }
+
+    &__link{
+      margin-left: 140px;
+    }
+
+    &__item{
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media screen and (max-width:375px) {
+   .project{
+    &__link {
+      text-decoration: none;
+      padding: 8px 10px 8px 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      font-family: Jost;
+      color: #333136;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 1px;
+      transition: all 0.4s ease;
+      margin-right: 30px;
+      margin: 0;
+
+      &:hover {
+        background: #FFAD9B;
+      }
+    }
+   }
+}
